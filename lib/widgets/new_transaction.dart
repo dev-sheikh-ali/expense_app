@@ -14,7 +14,7 @@ class _NewTransactionState extends State<NewTransaction> {
 
   final amountController = TextEditingController();
 
-  void submitData() {
+  void _submitData() {
     final enteredTitle = titleController.text;
     final enteredAmount = double.parse(amountController.text);
 
@@ -30,6 +30,15 @@ class _NewTransactionState extends State<NewTransaction> {
     Navigator.of(context).pop();
   }
 
+  void _presentDatePicker() {
+    showDatePicker(
+      context: context,
+      initialDate: DateTime.now(),
+      firstDate: DateTime(2023),
+      lastDate: DateTime.now(),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Card(
@@ -42,7 +51,7 @@ class _NewTransactionState extends State<NewTransaction> {
             TextField(
               decoration: InputDecoration(labelText: 'Title'),
               controller: titleController,
-              onSubmitted: (_) => submitData(),
+              onSubmitted: (_) => _submitData(),
               // onChanged: (val) {
               //   titleInput = val;
               // },
@@ -51,15 +60,38 @@ class _NewTransactionState extends State<NewTransaction> {
               decoration: InputDecoration(labelText: 'Amount'),
               controller: amountController,
               keyboardType: TextInputType.number,
-              onSubmitted: (_) => submitData(),
+              onSubmitted: (_) => _submitData(),
               // onChanged: (val) => amountInput = val,
             ),
-            TextButton(
-              child: Text('Add Transaction'),
-              style: TextButton.styleFrom(
-                primary: Colors.purple,
+            Container(
+              height: 70,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Text('No Date Chosen!'),
+                  TextButton(
+                    child: Text(
+                      'Choose Date',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    style: TextButton.styleFrom(
+                      primary: Theme.of(context).primaryColor,
+                    ),
+                    onPressed: _presentDatePicker,
+                  ),
+                ],
               ),
-              onPressed: submitData,
+            ),
+            ElevatedButton(
+              child: Text('Add Transaction'),
+              style: ButtonStyle(
+                backgroundColor:
+                    MaterialStateProperty.all<Color>(Colors.purple),
+                foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
+              ),
+              onPressed: _submitData,
             ),
           ],
         ),
