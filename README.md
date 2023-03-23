@@ -2,10 +2,7 @@
 
 
 ## Screenshots
-* add note
-![Screenshot of sticky note](./images/addnote.png)
-* delete note
-![Screenshot of sticky note](./assests/images/final.png)
+![Screenshot of sticky note](./assets/images/final.png)
 
 ## Note
 * This app is part of flutter course by maximilian schwarzmüller
