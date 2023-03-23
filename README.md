@@ -1,16 +1,11 @@
-# expense_app
+<h1 align="center">expense app</h1>
 
-A new Flutter project.
 
-## Getting Started
+## Screenshots
+* add note
+![Screenshot of sticky note](./images/addnote.png)
+* delete note
+![Screenshot of sticky note](./assests/images/final.png)
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Note
+* This app is part of flutter course by maximilian schwarzmüller
