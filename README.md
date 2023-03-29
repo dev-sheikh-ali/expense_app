@@ -7,6 +7,8 @@ simple expense tracker app .
 
 ## Screenshots
 ![Screenshot of sticky note](./assets/images/final.png)
+![Screenshot of sticky note](./assets/images/Screenshot1.png)
+![Screenshot of sticky note](./assets/images/Screenshot1.png)
 
 ## Note
 * This app is part of flutter course by maximilian schwarzmüller
