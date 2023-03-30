@@ -1,7 +1,7 @@
 <h1 align="center">expense app</h1>
 
 <p>
-simple expense tracker app . 
+* simple expense tracker app . 
 </p>
 
 
@@ -10,9 +10,9 @@ simple expense tracker app .
 
 ### App Preview :
 
-<table width="100%"> 
+<table width="70%"> 
 <tr>
-<td width="50%">      
+<td width="30%">      
 &nbsp; 
 <br>
 <p align="center">
@@ -20,7 +20,7 @@ simple expense tracker app .
 </p>
 <img src="./assets/images/Screenshot1.png">
 </td> 
-<td width="50%">
+<td width="30%">
 <br>
 <p align="center">
   ADMIN
@@ -28,5 +28,8 @@ simple expense tracker app .
 <img src="./assets/images/Screenshot2.png">  
 </td>
 </table>
+
+
 ## Note
+
 * This app is part of flutter course by maximilian schwarzmüller
