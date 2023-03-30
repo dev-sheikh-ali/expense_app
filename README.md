@@ -18,14 +18,14 @@
 <p align="center">
   HOME
 </p>
-<img src="./assets/images/Screenshot1.png">
+<img src="./assets/images/Screenshot2.png">
 </td> 
 <td width="30%">
 <br>
 <p align="center">
-  ADMIN
+  ADD TX
 </p>
-<img src="./assets/images/Screenshot2.png">  
+<img src="./assets/images/Screenshot1.png">  
 </td>
 </table>
 
